@@ -1,0 +1,38 @@
+/*UTILITARIOS*/
+.rb-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+.pp-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+.pp-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+.c1 {
+  color: #f29494;
+}
+.c2 {
+  color: #ffffff;
+}
+.c3 {
+  color: #d8d8d8;
+}
+.btn {
+  background-color: #f29494;
+  padding: 10px 25px;
+  border-radius: 5px;
+}
+.grid {
+  display: grid;
+}
+.duas-colunas {
+  grid-template-columns: 1fr 1fr;
+}
+.conteiner {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 40px;
+}
