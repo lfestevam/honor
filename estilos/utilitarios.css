@@ -20,17 +20,6 @@
 .c3 {
   color: #d8d8d8;
 }
-.btn {
-  background-color: #f29494;
-  padding: 10px 25px;
-  border-radius: 5px;
-}
-.grid {
-  display: grid;
-}
-.duas-colunas {
-  grid-template-columns: 1fr 1fr;
-}
 .conteiner {
   max-width: 1300px;
   margin: 0 auto;

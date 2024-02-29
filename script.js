@@ -15,9 +15,7 @@ function trocarRelogio() {
 trocarRelogio();
 
 //MENU MOBILE
-const btnMenuMobile = document.querySelector(".menuIcon");
-const btnMenuMobileImg = document.querySelector(".menuIcon img");
-const x = document.querySelector(".fecharMenu img");
+const btnMenuMobile = document.querySelector(".menu-icon");
 
 function ativarMenuMobile() {
   const nav = document.querySelector(".menu-links");

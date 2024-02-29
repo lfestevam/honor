@@ -12,9 +12,12 @@
   gap: 50px;
   align-items: center;
 }
-.menu-links li {
+.menu-links li a {
   padding: 10px 25px;
-  cursor: pointer;
+}
+.menu-links li:last-child a {
+  background-color: #f29494;
+  border-radius: 5px;
 }
 .menu-links li:nth-child(-n + 3)::after {
   content: "";
@@ -27,19 +30,22 @@
 .menu-links li:nth-child(-n + 3):hover:after {
   width: 100%;
 }
-.menu-links li:last-child:hover {
+.menu-links li:last-child a:hover {
   background-color: #f1c0c0;
   transition: 0.5s;
 }
-.menuIcon {
+.menu-icon {
   display: none;
 }
-
+.conteiner-primeira {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 .titulo-principal {
-  font-size: 100px;
+  font-size: 6.25rem;
 }
 .sub-titulo {
-  font-size: 30px;
+  font-size: 2rem;
   letter-spacing: 10px;
   margin-bottom: 45px;
 }
@@ -58,6 +64,7 @@
 .info {
   grid-column: 1;
   align-self: center;
+  padding: 0px 10px;
 }
 .info p {
   max-width: 50ch;
@@ -67,16 +74,18 @@
   display: flex;
   gap: 40px;
   grid-column: 1;
+  justify-self: center;
+  padding: 0px 10px;
 }
 .card {
-  width: 200px;
-  height: 250px;
+  max-width: 200px;
+  max-height: 250px;
   background-color: #2b3544;
   border-radius: 40px;
   display: grid;
   padding: 20px;
   cursor: pointer;
-  box-shadow: 5px 5px 50px #000000;
+  box-shadow: 5px 5px 20px #050d18;
 }
 .card:hover {
   background-color: #f29494;
@@ -94,50 +103,39 @@
   top: 30px;
 }
 .info-card h3 {
-  font-size: 30px;
-  text-align: center;
+  font-size: 2rem;
 }
 .card img {
   max-width: 150px;
-  justify-self: center;
 }
 .relogio-grande {
   grid-column: 2;
   grid-row: 1;
+  padding: 0px 10px;
 }
 
 /*RESPONSIVO*/
 @media (max-width: 1100px) {
-  #primeira.duas-colunas {
+  .conteiner-primeira {
     grid-template-columns: 1fr;
-  }
-  .slider {
-    display: flex;
-    justify-content: center;
   }
   .relogio-grande {
     grid-column: 1;
     grid-row: 2;
     justify-self: center;
+    max-width: 450px;
   }
-  .cards {
-    justify-self: center;
-  }
-  .relogio-grande img {
-    max-width: 500px;
-  }
-  .header {
+  .conteiner-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   /*MENU MOBILE*/
-  .menuIcon {
+  .menu-icon {
     display: block;
   }
   .menu-links {
     display: none;
-    width: 0px;
   }
   .menu-links.ativo {
     display: block;
@@ -171,11 +169,11 @@
   .info p {
     text-align: center;
   }
-  .sub-titulo:hover::after {
-    display: none;
-  }
   .sub-titulo {
     margin: 0;
+  }
+  .sub-titulo:hover::after {
+    width: 0px;
   }
   .menu-links li:nth-child(-n + 3):hover:after {
     width: 0%;
@@ -183,54 +181,44 @@
 }
 @media (max-width: 800px) {
   .cards {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .card {
-    box-shadow: 5px 5px 30px #000000;
-  }
-  .sub-titulo {
-    margin: 0;
+    padding: 0 20px;
+    max-width: 500px;
+    min-height: 300px;
+    overflow-x: scroll;
+    align-items: center;
   }
 }
 
-@media (max-width: 600px) {
-  .card {
-    width: 150px;
-    height: 200px;
-    padding: 10px 0px;
-  }
-  .card img {
-    max-width: 80px;
-    justify-self: center;
+@media (max-width: 630px) {
+  .cards {
+    max-width: 300px;
   }
   .info-card h3 {
-    font-size: 25px;
+    font-size: 1.5rem;
   }
   .info-card span {
     position: static;
   }
-  .relogio-grande img {
-    max-width: 250px;
+  .relogio-grande {
+    max-width: 300px;
   }
   .header {
-    padding-bottom: 10px;
     margin-top: 20px;
   }
-  .logo img {
+  .logo {
     width: 150px;
   }
-  .menuIcon img {
+  .menu-icon {
     width: 30px;
   }
   .titulo-principal {
-    font-size: 60px;
+    font-size: 3.75rem;
   }
   .sub-titulo {
-    font-size: 20px;
+    font-size: 1.2rem;
   }
-  #primeira.duas-colunas {
-    padding: 40px 10px;
+  .conteiner-primeira {
+    padding: 0px 10px;
   }
 }
 

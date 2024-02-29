@@ -13,69 +13,70 @@
 </head>
 
 <body>
-  <header>
-    <div class="conteiner header">
-      <div class="menuIcon">
-        <img src="./imgs/menuHamburguer.svg" alt="menu-Hamburguer">
-      </div>
+  <header class="header">
+    <div class="conteiner conteiner-header">
+      <img src="./imgs/menuHamburguer.svg" alt="menu-Hamburguer" class="menu-icon">
       <div class="menu">
-        <div class="logo">
-          <img src="./imgs/logo.svg" alt="logo-honor">
-        </div>
+        <img src="./imgs/logo.svg" alt="logo-honor" class="logo">
         <nav aria-label="primaria">
           <ul class="menu-links">
             <li><a href="#" class="pp-regular c2">Home</a></li>
             <li><a href="#" class="pp-regular c2">Smartphone</a></li>
             <li><a href="#" class="pp-regular c2">Store</a></li>
-            <li class="background-rosa btn"><a href="#" class="pp-regular c2">Buy Now</a></li>
+            <li><a href="#" class="pp-regular c2">Buy Now</a></li>
           </ul>
         </nav>
       </div>
     </div>
   </header>
   <main>
-    <section class="conteiner grid duas-colunas" id="primeira">
-      <div class="info">
-        <h1 class="titulo-principal rb-thin c2">Smartwatch</h1>
-        <h2 class="sub-titulo pp-thin c1">ELEMENT SERIE</h2>
-        <p class="pp-thin c3">Seu parceiro de estilo e eficiência, sempre conectado ao seu ritmo de vida.
-        </p>
+    <article class="primeira">
+      <div class="conteiner conteiner-primeira">
+        <div class="info">
+          <h1 class="titulo-principal rb-thin c2">Smartwatch</h1>
+          <h2 class="sub-titulo pp-thin c1">ELEMENT SERIE</h2>
+          <p class="pp-thin c3">Seu parceiro de estilo e eficiência, sempre conectado ao seu ritmo de vida.
+          </p>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <div class="info-card">
+              <h3 class="c2">Pink</h3>
+              <span class="c2">Element</span>
+            </div>
+            <img src="./imgs/smartWatchRose.png" alt="relogio-rosa">
+          </div>
+
+          <div class="card">
+            <div class="info-card">
+              <h3 class="c2">White</h3>
+              <span class="c2">Element</span>
+            </div>
+            <img src="./imgs/smarrtWatchBranco.png" alt="relogio-branco">
+          </div>
+
+          <div class="card">
+            <div class="info-card">
+              <h3 class="c2">Dark</h3>
+              <span class="c2">Element</span>
+            </div>
+            <img src="./imgs/smarrtWatchPreto.png" alt="relogio-preto">
+          </div>
+        </div>
+
+        <div class="relogio-grande" id="js-animation">
+          <img src="./imgs/smarrtWatchPreto.png" alt="relogio-preto-grande">
+        </div>
       </div>
+    </article>
 
-      <div class="cards">
-        <div class="card">
-          <div class="info-card">
-            <h3 class="c2">Pink</h3>
-            <span class="c2">Element</span>
-          </div>
-          <img src="./imgs/smartWatchRose.png" alt="">
-        </div>
+    <section class="segunda">
+      <div class="conteiner conteiner-segunda">
 
-        <div class="card">
-          <div class="info-card">
-            <h3 class="c2">White</h3>
-            <span class="c2">Element</span>
-          </div>
-          <img src="./imgs/smarrtWatchBranco.png" alt="">
-        </div>
-
-        <div class="card">
-          <div class="info-card">
-            <h3 class="c2">Dark</h3>
-            <span class="c2">Element</span>
-          </div>
-          <img src="./imgs/smarrtWatchPreto.png" alt="">
-        </div>
-      </div>
-
-      <div class="relogio-grande" id="js-animation">
-        <img src="./imgs/smarrtWatchPreto.png" alt="">
       </div>
     </section>
 
-    <section class="conteiner">
-
-    </section>
   </main>
   <script src="./script.js"></script>
 </body>
